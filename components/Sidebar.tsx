@@ -17,11 +17,11 @@ import {
 import { ModeToggle } from '@/components/mode-toggle';
 
 const menuItems = [
-  { href: '/', icon: LayoutDashboard, label: 'Dashboard' },
-  { href: '/users', icon: Users, label: 'Users' },
-  { href: '/products', icon: Package, label: 'Products' },
-  { href: '/categories', icon: List, label: 'Categories' },
-  { href: '/settings', icon: Settings, label: 'Settings' },
+  { href: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { href: '/dashboard/users', icon: Users, label: 'Users' },
+  { href: '/dashboard/products', icon: Package, label: 'Products' },
+  { href: '/dashboard/categories', icon: List, label: 'Categories' },
+  { href: '/dashboard/settings', icon: Settings, label: 'Settings' },
 ];
 
 export default function Sidebar() {

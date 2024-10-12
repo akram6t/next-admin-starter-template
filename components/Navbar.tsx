@@ -65,8 +65,11 @@ export function Navbar() {
               />
             </div>
           </form>
-          <Button size="icon">
-            <Bell />
+          <Button size="icon" variant='ghost' className='w-5 h-5'>
+            <Search className='h-4 w-4' />
+          </Button>
+          <Button size="icon" variant='ghost' className='w-5 h-5'>
+            <Bell className='h-4 w-4' />
           </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
