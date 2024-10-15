@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
 
@@ -9,9 +9,20 @@ const data = [
   { name: 'Home & Garden', value: 100 },
 ]
 
-const COLORS = ['var(--chart-1)', 'var(--chart-2)', 'var(--chart-3)', 'var(--chart-4)']
-
 export function PieChartComponent() {
+
+  // Generate an array of colors based on Shadcn UI theme variables
+  const generateColors = () => {
+    return [
+      'hsl(var(--primary))',
+      'hsl(var(--primary) / 0.8)',
+      'hsl(var(--primary) / 0.6)',
+      'hsl(var(--primary) / 0.4)',
+    ]
+  }
+
+  const COLORS = generateColors()
+
   return (
     <ResponsiveContainer width="100%" height={300}>
       <PieChart>

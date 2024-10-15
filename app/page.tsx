@@ -10,8 +10,9 @@ export default function Page(){
         Hello world!
       </h1>
       <ModeToggle/>
-      {/* <div className=""> */}
-      <Button>Dashboard</Button>
+      <Button>
+        <Link href="/dashboard">Dashboard</Link>
+      </Button>
       <Button>
         <Link href="/auth/signin">Login</Link>
       </Button>
